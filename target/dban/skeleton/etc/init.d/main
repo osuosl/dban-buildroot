@@ -345,6 +345,7 @@ fi
 
 
 read -t 0.1 -N 255 # Empty keyboard buffer (remove 255 chars. should be enough)
+/etc/init.d/flash-leds.sh &
 
 if [ $AUTOSHUTDOWN -eq 1 ]; then
 	printf "Automatic shutdown in 1 hour.\n"
