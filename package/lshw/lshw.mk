@@ -4,9 +4,8 @@
 #
 ################################################################################
 
-LSHW_VERSION = B.02.17-r2575
-#LSHW_SITE = http://ezix.org/software/files
-LSHW_SITE = https://github.com/NHellFire/dban/raw/master/dl
+LSHW_VERSION = B.02.18
+LSHW_SITE = http://ezix.org/software/files
 LSHW_LICENSE = GPLv2
 LSHW_LICENSE_FILES = COPYING
 
