@@ -1,0 +1,7 @@
+config BR2_PACKAGE_NTPCLIENT
+	bool "ntpclient"
+	depends on BR2_PACKAGE_UCLIBC
+	default n
+	help
+	  Lightweight NTP client
+

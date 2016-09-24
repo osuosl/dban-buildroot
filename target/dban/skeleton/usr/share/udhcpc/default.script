@@ -45,6 +45,9 @@ case "$1" in
 			echo "nameserver $i" >> "$tmpfile"
 		done
 		mv "$tmpfile" "$realconf"
+
+		ntpsrv=$(set -- $ntpsrv; echo $1)
+		ntpclient -s -h ${ntpsrv:-pool.ntp.org} 2>&1 | logger -st ntpclient 2>&1
 		;;
 esac
 

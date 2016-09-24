@@ -1246,6 +1246,8 @@ menu "Networking"
 	source "package/zeromq/Config.in"
 	source "package/zmqpp/Config.in"
 	source "package/zyre/Config.in"
+
+	source "package/ntpclient/Config.in"
 endmenu
 
 menu "Other"

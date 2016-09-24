@@ -1,0 +1,13 @@
+Index: ntpclient-2015/Makefile
+===================================================================
+--- ntpclient-2015.orig/Makefile
++++ ntpclient-2015/Makefile
+@@ -22,7 +22,7 @@ CFLAGS += -W -Wall  # -W is spelled -Wex
+                     # valid and works with older compilers.
+ CFLAGS += -O2
+ CFLAGS += -DPRECISION_SIOCGSTAMP
+-CFLAGS += -DENABLE_DEBUG
++# CFLAGS += -DENABLE_DEBUG
+ CFLAGS += -DENABLE_REPLAY
+ # CFLAGS += -DUSE_OBSOLETE_GETTIMEOFDAY
+ 
