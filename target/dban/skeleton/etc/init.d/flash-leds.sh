@@ -7,10 +7,10 @@ STATE=off
 while true; do
 	sleep $INTERVAL
 	if [ "$STATE" = "off" ]; then
-		setleds +num +caps +scroll
+		setleds +num +caps +scroll 2>/dev/null
 		STATE=on
 	else
-		setleds -num -caps -scroll
+		setleds -num -caps -scroll 2>/dev/null
 		STATE=off
 	fi
 done
