@@ -71,7 +71,7 @@ if test -x /etc/init.d/scsi-format; then
 fi
 
 # @FIXME
-#lshw         >/var/log/lshw.txt
+lshw         >/var/log/lshw.txt
 #lshw -html   >/var/log/lshw.html
 lshw -xml    >/var/log/lshw.xml
 
